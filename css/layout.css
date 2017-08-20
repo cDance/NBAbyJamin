@@ -40,7 +40,7 @@ header {
 
 .content1 {
     width: 1220px;
-    min-height: 700px;
+    min-height: 1000px;
     margin: 0 auto;
     background: #fff;
 }
@@ -181,7 +181,7 @@ header {
 }
 */
 .banner {
-    padding: 30px 10px 15px 10px;
+    padding: 30px 10px 10px 10px;
     width: 1200px;
     height: 150px;
 }
@@ -192,16 +192,101 @@ header {
     background: #08c;
 }
 
-.main-body-titles {
-    width: 350px;
+/* flexslider */
+.flexslider{position:relative;height:330px;overflow:hidden;background:url(../images/loading.gif) 50% no-repeat;}
+.slides{position:relative;z-index:1;}
+.slides li{height:330px;}
+.flex-control-nav{position:absolute;bottom:10px;z-index:2;width:100%;text-align:center;}
+.flex-control-nav li{display:inline-block;width:14px;height:14px;margin:0 5px;*display:inline;zoom:1;}
+.flex-control-nav a{display:inline-block;width:14px;height:14px;line-height:40px;overflow:hidden;background:url(../images/dot.png) right 0 no-repeat;cursor:pointer;}
+.flex-control-nav .flex-active{background-position:0 0;}
+
+.flex-direction-nav{position:absolute;z-index:3;width:100%;top:45%;}
+.flex-direction-nav li a{display:block;width:50px;height:50px;overflow:hidden;cursor:pointer;position:absolute;}
+.flex-direction-nav li a.flex-prev{left:40px;background:url(../images/prev.png) center center no-repeat;}
+.flex-direction-nav li a.flex-next{right:40px;background:url(../images/next.png) center center no-repeat;}
+
+
+
+
+
+/*主体新闻*/
+.main-body-artiles {
+    margin-top: -10px;  /*负数顶上去*/
+    width: 360px;
     height: 330px;
-    background: red;
+/*    background: red;*/
 }
 
-.main-body-news {
+.main-body-artiles ul li {
+    position: relative;
+/*    display: list-item;*/
+    width: 350px;
+    height: 86.5px;
+/*    line-height: 20px;*/
+    border-top: solid 1px #ccc;
+/*    clear: both;*/
+}
+
+.main-body-artiles ul li:first-child {
+    border-top: none;
+}
+
+.main-body-artiles ul li a {
+
+}
+.main-body-artiles img {
+    margin: 10px auto;
+    float: left;
+    width: 92px;
+    height: 67px;
+
+}
+.main-body-artiles i {
+    position: absolute;
+    top: 15px;
+    left: 103px;
+    width: 260px;
+    font-size: 14px;
+}
+
+
+
+.main-body-important-news {
     width: 300px;
     height: 330px;
-    background: #08c;
+    background: url(../images/inpnews.png) no-repeat;
+}
+
+.main-body-important-news span {
+    padding-left: 25px;
+    line-height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    
+}
+
+.main-body-important-news .important-news-switch {
+/*    width: 50px;*/
+    float: right;
+    padding-left: 30px;
+    margin-right: 15px;
+    line-height: 40px;
+    font-size: 14px;
+    color: #fff;
+    cursor: pointer;
+    background: url(/images/inpnews-sync.png) no-repeat 5px 12px;
+    
+}
+
+.main-body-important-news .important-news-list ul li {
+    padding-left: 10px;
+    float: left;
+    width: 300px;
+    height: 29px;
+    font-size: 14px;
+    line-height: 29px;
 }
 
 .demobox{
@@ -210,7 +295,52 @@ header {
 .main-wrap-left-news {
     width: 880px;
     height: 640px;
-    background: #06c;
+/*    background: #06c;*/
+}
+
+.main-wrap-left-news .left-news-title h2 {
+    display: inline-block;
+    float: left;
+/*    width: 88px;*/
+    height: 36px;
+    line-height: 36px;
+    font-size: 22px;
+    font-style: 'Microsoft Yahei';
+    font-weight: normal;
+    padding-left: 30px;
+    color: #2464b5;
+    border-bottom: 3px solid #e11647;
+    background: url(../css/images/news-title-icon.png) no-repeat left center;
+    
+}
+.main-wrap-left-news .left-news-title {
+    border-bottom: 1px solid #ccc;
+}
+.main-wrap-left-news .left-news-switch {
+/*    padding-left: 20px;*/
+    width: 82px;
+    height: 39px;
+    line-height: 39px;
+/*     margin-right: 20px;*/
+    background: url(../css/images/icon_16_addteam.png) no-repeat right center;
+}
+
+.main-wrap-left-news a {
+    font-size: 16px;
+   
+}
+.main-wrap-left-news a:hover {
+    color: none;
+   
+}
+
+.main-wrap-left-news .switchbtn {
+    display: inline-block;
+    height:30px;
+    line-height: 30px;
+    float: right;
+    padding-left: 20px;
+    background: url(../images/switch-icon_bule.png) no-repeat left center;
 }
 
 .main-wrap-right-rank {
