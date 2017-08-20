@@ -20,9 +20,16 @@ table { border-spacing:0; border-collapse:collapse;}
 .clearfix { *zoom: 1;} 
 .clearfix:before, .clearfix:after { display: table; line-height: 0; content: "";}
 .clearfix:after { clear: both;}
-.ml28 {margin-left: 28px;   /*这里通用的属性可以放上面*/}
+
+.ml10 {margin-left: 10px;}
 .ml20 {margin-left: 20px;}
+.ml28 {margin-left: 28px;   /*这里通用的属性可以放上面*/}
+.mr20 {margin-right: 20px;}
+.mt10 {margin-top: 10px;}
 .mt15 {margin-top: 15px;}
+.mb10 {margin-bottom: 10px;}
+.pt10 {padding-top: 10px;}
+
 
 header {
     background: #006bb7;
@@ -293,7 +300,7 @@ header {
     
 }
 .main-wrap-left-news {
-    width: 880px;
+    width: 900px;
     height: 640px;
 /*    background: #06c;*/
 }
@@ -314,6 +321,7 @@ header {
     
 }
 .main-wrap-left-news .left-news-title {
+/*    margin-right: 20px;*/
     border-bottom: 1px solid #ccc;
 }
 .main-wrap-left-news .left-news-switch {
@@ -334,14 +342,44 @@ header {
    
 }
 
-.main-wrap-left-news .switchbtn {
+.main-wrap-left-news .news-switchbtn {
     display: inline-block;
     height:30px;
     line-height: 30px;
     float: right;
     padding-left: 20px;
+/*    margin-right: 20px;*/
     background: url(../images/switch-icon_bule.png) no-repeat left center;
 }
+
+.main-lastest-news-article-t .lastest-news-article1 , .lastest-news-article2 {
+    float: left;
+    width: 440px;
+    height: 314px;
+    background: #08c;
+}
+
+.main-lastest-news-article-t img {
+    width: 440px;
+    height: 314px;
+}
+
+
+
+.main-lastest-news-article-b .lastest-news-articlea, .lastest-news-articleb , .lastest-news-articlec {
+    float: left;
+    width: 290px;
+    height: 306px;
+    background: #ccc;
+}
+
+.main-lastest-news-article-b img {
+    width: 290px; 
+    height: 200px;
+/*    position: absolute;*/
+    transition: 1s;
+}
+
 
 .main-wrap-right-rank {
     width: 300px;
