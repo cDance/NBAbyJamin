@@ -26,9 +26,11 @@ table { border-spacing:0; border-collapse:collapse;}
 .ml28 {margin-left: 28px;   /*这里通用的属性可以放上面*/}
 .mr20 {margin-right: 20px;}
 .mt10 {margin-top: 10px;}
+.mt20 {margin-top: 20px;}
 .mt15 {margin-top: 15px;}
 .mb10 {margin-bottom: 10px;}
 .pt10 {padding-top: 10px;}
+.pt20 {padding-top: 20px;}
 
 
 header {
@@ -47,7 +49,7 @@ header {
 
 .content1 {
     width: 1220px;
-    min-height: 1000px;
+    min-height: 1300px;
     margin: 0 auto;
     background: #fff;
 }
@@ -371,6 +373,7 @@ header {
     width: 290px;
     height: 306px;
     background: #ccc;
+/*    border :1px solid #ccc;*/
 }
 
 .main-lastest-news-article-b img {
@@ -380,9 +383,232 @@ header {
     transition: 1s;
 }
 
+.main-wrap-left-news .main-lastest-more-info {
+    display: inline-block;
+    font-size: 16px;
+    color: #2464B5;
+    width: 890px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background: #F0F0F0;
+}
 
+.main-lastest-more-info .moreinfo-btn {
+    padding-right: 15px;
+    background: url(../css/images/icon_16_arrow_right_blue.png) no-repeat
+    right center;
+}
+
+.main-lastest-more-info :hover {
+    
+/*    text-decoration: none;*/
+    width: 890px;
+    height: 30px;
+    color: #fff;
+    display: inline-block;
+    background: #08c;
+
+}
+/*
+.main-lastest-more-info .moreinfo-btn:hover {
+     background: url(../css/images/arrow_down.png) no-repeat center;
+}
+   
+*/
+
+
+/*球队排名*/
 .main-wrap-right-rank {
     width: 300px;
     height: 640px;
     background: #ccc;
+}
+
+/*  视频  */
+.video {
+/*    display: inline-block;*/
+    width: 1200px;
+    height: 561px;
+/*    background: #08c;*/
+}
+
+.video-nav {
+    width: 1200px;
+    height: 39px;
+    border-bottom: 1px solid #ccc;
+}
+
+.video-title {
+    padding-left: 35px;
+    width: 105px;
+    height: 39px;
+    color: #2464b5;
+    font-size: 22px;
+    line-height: 39px;
+    background: url(../css/images/video-title-ico.png) no-repeat left center;
+}
+
+
+.vidio-tab span {
+    display: inline-block;
+    width: 120px;
+    height: 36px;
+    font-size: 16px;
+    line-height: 39px;
+    text-align: center;
+    border-bottom: 3px solid red;
+}
+
+.video-more {
+    height: 39px;
+    line-height: 39px;
+    color: #2464b5;
+    font-size: 16px;
+}
+
+.video-list {
+    margin-left: -20px;
+}
+.video-list a {
+    float: left;
+    margin-left: 20px;
+    display: inline-block;
+    width: 285px;
+    height: 245px;
+    background: #30c;
+}
+
+
+
+
+
+
+/*专题*/
+.special-topic {
+    width: 1200px;
+    height: 508px;
+/*    background: #ccc;*/
+}
+
+.special-topic-title {
+    display: inline-block;
+    padding-left: 30px;
+    width: 1200px;
+    height: 40px;
+    color: #2464b5;
+    font-size: 22px;
+    font-weight: none;
+    line-height: 40px;
+    border-bottom: 1px solid #ccc;
+    background: url(../css/images/special-topic-icon.png) no-repeat left center;
+}
+
+.special-topic-container-wrap {
+    display: inline-block;
+    width: 1200px;
+    height: 446px;
+    background: #000;
+}
+
+.special-topic-container {
+    width: 918px;
+    height: 436px;
+}
+.special-topic-container a {
+    display: inline-block;
+    margin-right: 20px;
+    margin-top: 20px;
+    float: left;
+    width: 286px;
+    height: 203px;
+    background: #804db4;
+}
+
+
+
+.special-topic-research {
+    width: 282px;
+    height: 350px;
+    background: #666;
+}
+
+.research-title {
+    width: 282px;
+    height: 50px;
+    background: #ccc;
+}
+
+.research-choice {
+    width: 282px;
+    height: 350px;
+    background: #09c;
+}
+
+
+
+
+
+
+
+
+/*媒体分享*/
+.media-share {
+    width: 1200px;
+    height: 80px;
+/*    background: #06c;*/
+}
+
+.media-share-list ul li {
+    display: inline-block;
+    margin-left: 13px;
+    float: left;
+    width: 136px;
+    height： 78px;
+/*    background: #ccc;*/
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.media-share-list ul li:first-child {
+    margin-left: 2px;
+}
+
+
+.media-share-list a>img {
+    float: left;
+    padding: 18px 15px 18px 13px;
+    width: 44px;
+    height: 44px;
+}
+.media-share-list a>span{
+    display: block;
+    padding-left: 10px;
+    float: left;
+    height: 78px;
+    line-height: 78px;
+    font-size: 14px;
+
+}
+
+
+/*合作伙伴*/
+
+.NBA-partner {
+    width: 1200px;
+    height: 245px;
+/*    background: #aaa;*/
+}
+
+.NBA-partner-title {
+    width: 1200px;
+    height: 39px;
+    border-bottom: 1px solid #ccc;
+}
+
+
+
+footer {
+    width: 1200px;
+    height: 415px;
 }
