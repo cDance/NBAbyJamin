@@ -180,8 +180,9 @@ header {
 /*主体部分*/
 .main-bg {
     width: 100%;
-    min-height: 700px;
-    background: url(../images/main-bg.jpg) no-repeat center;
+    min-height: 800px;
+    background: url(../images/main-bg.jpg) no-repeat center
+        0px;
     
 }
 
@@ -438,11 +439,13 @@ header {
 }
 
 .main-lastest-news-article-t .lastest-news-article1 , .lastest-news-article2 {
+    position: relative;
     float: left;
     width: 440px;
     height: 314px;
     background: #08c;
 }
+
 
 .main-lastest-news-article-t img {
     width: 440px;
@@ -450,6 +453,20 @@ header {
 }
 
 
+.main-lastest-news-article-t .article-title {
+    padding-left: 40px;
+    background: url(../css/images/icon_24_news_white_db31d6.png) no-repeat 10px 4px; 
+}
+.main-lastest-news-article-t span {
+    display: inline-block;
+    width: 440px;
+    height: 30px;
+    position: absolute;
+    bottom: 15px;
+    left: 10px;
+    color: #fff;
+    font-size: 18px;
+}
 
 .main-lastest-news-article-b .lastest-news-articlea, .lastest-news-articleb , .lastest-news-articlec {
     float: left;
@@ -464,6 +481,21 @@ header {
     height: 200px;
 /*    position: absolute;*/
     transition: 1s;
+}
+.main-lastest-news-article-b .articleb-title {
+    
+    display: inline-block;
+    padding: 10px 10px;
+    font-size: 16px;
+}
+.main-lastest-news-article-b .articleb-time {
+    width: 280px;
+    height: 200px;
+    text-align: right;
+    display: block;
+/*    padding: 20px 5px 2px 30px;*/
+    font-size: 12px;
+    background: url(../css/images/icon_24_news_white_db31d6.png) no-repeat 10px 50%;
 }
 
 .main-wrap-left-news .main-lastest-more-info {
@@ -582,7 +614,7 @@ header {
 .special-topic-title {
     display: inline-block;
     padding-left: 30px;
-    width: 1200px;
+    width: 1170px;
     height: 40px;
     color: #2464b5;
     font-size: 22px;
@@ -596,46 +628,89 @@ header {
     display: inline-block;
     width: 1200px;
     height: 446px;
-    background: #000;
+/*    background: #000;*/
 }
 
 .special-topic-container {
     width: 918px;
     height: 436px;
 }
-.special-topic-container a {
+.special-topic-container li {
     display: inline-block;
     margin-right: 20px;
     margin-top: 20px;
     float: left;
-    width: 286px;
+    width: 285px;
     height: 203px;
     background: #804db4;
 }
+.special-topic-container a>img {
+    width: 285px;
+    height: 203px;   
+}
 
+.special-topic-container li {
+    position: relative;
+}
+.special-topic-container li .bottom-img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 285px;
+    height: 40px;
+}
 
-
+/*调查*/
 .special-topic-research {
-    width: 282px;
-    height: 350px;
-    background: #666;
+    position: relative;
+    margin-left: -20px;
+    width: 285px;
+    height: 446px;
 }
 
 .research-title {
-    width: 282px;
-    height: 50px;
-    background: #ccc;
+/*    width: 282px;*/
+    height: 40px;
+    padding-left: 15px;
+    line-height: 40px;
+    font-size: 16px;
+    color: #fff;
+/*    text-align: center;*/
+    background: #2464b5;
 }
 
 .research-choice {
-    width: 282px;
+/*    padding: 15px;*/
+    width: 285px;
     height: 350px;
-    background: #09c;
+    background: url(../css/images/research-choice.png)no-repeat;
+}
+
+.research-choice p {
+    font-size: 14px;
+    padding: 15px;
+}
+.research-choice ul li label {
+    padding: 5px;
+    margin-left: 16px;
+    display: block;
+    width: 200px;
+    height: 14px;
+    line-height: 14px;
+    font-size: 14px;
+}
+
+.research-choice .fl {
+    margin-right: 6px;
 }
 
 
-
-
+.foul-handbook {
+    position: absolute;
+    bottom: 17px;
+    left: o;
+    
+}
 
 
 
@@ -648,12 +723,12 @@ header {
 }
 
 .media-share-list ul li {
-    display: inline-block;
+/*    display: inline-block;*/
     margin-left: 13px;
     float: left;
     width: 136px;
     height： 78px;
-    background: #ccc;
+/*    background: #ccc;*/
     border: 1px solid #ccc;
     border-radius: 4px;
 }
@@ -665,18 +740,34 @@ header {
 
 .media-share-list a>img {
     float: left;
-    margin: 17px 15px 17px 13px;
+    margin: 17px 0px 17px 12px;
     width: 44px;
     height: 44px;
 }
 .media-share-list a>span{
-    display: block;
-    padding-left: 10px;
-    float: left;
+/*    display: block;*/
+/*    MARGIN-left: 10px;*/
+    float: right;
+    width: 77px;
     height: 78px;
     line-height: 78px;
+    text-align: center;
     font-size: 14px;
 
+}
+.media-share-list ul li {
+    position: relative;
+}
+
+.media-share-list .media-qrcore {
+    display: none;
+    position: absolute; 
+    bottom: 80px;
+    left: 0px;
+    width: 138px;
+    height: 138px;
+    border-radius: 4px;
+    background: #aaa;
 }
 
 
