@@ -77,6 +77,23 @@
             </div>
            
         </div>
+<!--        固定导航栏-->
+        <div class="nav-fixed content" id="nav-fixed">
+            <span class="NBA-logo">NBA</span>
+	        <ul>
+                <li><a href="#">首页</a></li>
+                <li><a href="#">视频</a></li>
+                <li><a href="#">新闻</a></li>
+                <li><a href="#">图集</a></li>
+                <li><a href="#">球队</a></li>
+                <li><a href="#">球员</a></li>
+                <li><a href="#">赛程</a></li>
+                <li><a href="#">排名</a></li>
+                <li><a href="#">数据</a></li>
+                <li><a href="#">专题</a></li>
+                <li><a href="#">更多</a></li>
+	        </ul>
+        </div>
     </header>
     
 <!--  banner及主体部分-->
@@ -344,41 +361,51 @@
  <!--   合作伙伴 -->
     <section class="media-share content">
         <div class="media-share-list">
-            <ul >
+            <ul id="media-share">
                 <li>
                     <a href="#">
                         <img src="css/images/icon_weibo.jpg"/>
                         <span>微博</span>
                     </a>  
+                    <div>
+<!--                        <img/>-->
+                    </div>
                 </li>
                 <li>
                     <a href="#">
                         <img src="css/images/icon_weibo.jpg"/>
                         <span>NBA微信</span>
                     </a>
-                    <img class="media-qrcore" src="http://mat1.gtimg.com/chinanba/web/statics/media-wx-qrcode_af2888.png"></img>
+                    <div>
+                        <img  src="http://mat1.gtimg.com/chinanba/web/statics/media-wx-qrcode_af2888.png" />
+                    </div>
                 </li>
                  <li>
                     <a href="#">
                         <img src="css/images/icon_weibo.jpg"/>
                         <span>Nbaplay</span>
                     </a>
-                    <img class="media-qrcore" src="http://mat1.gtimg.com/chinanba/web/statics/media-pz-qrcode_9485b6.png"></img>
+                    <div>
+                        <img src="http://mat1.gtimg.com/chinanba/web/statics/media-wx-qrcode_af2888.png" />
+                    </div>
                 </li>
                  <li>
                     <a href="#">
                         <img src="css/images/icon_weibo.jpg"/>
                         <span>NBA QQ</span>
                     </a>
-                    <img class="media-qrcore" src="http://mat1.gtimg.com/chinanba/web/statics/media-pz-qrcode_9485b6.png"></img>
+                    <div>
+                        <img src="http://mat1.gtimg.com/chinanba/web/statics/media-wx-qrcode_af2888.png" />
+                    </div>
                 </li>
                  <li>
                     <a href="#">
                         <img src="css/images/icon_weibo.jpg"/>
                         <span>NBA兴趣</span>
-                        <div class="media-qrcore"></div>
                     </a>
-                    <img class="media-qrcore" src="http://mat1.gtimg.com/chinanba/web/statics/media-pz-qrcode_9485b6.png"></img>
+                    <div>
+                        <img src="http://mat1.gtimg.com/chinanba/web/statics/media-wx-qrcode_af2888.png"/>
+                    </div>
                 </li>
                  <li>
                     <a href="#">
@@ -386,21 +413,27 @@
                         <span>TTNBA</span>
                         
                     </a>
-                    <img class="media-qrcore" src="http://mat1.gtimg.com/chinanba/web/statics/media-pz-qrcode_9485b6.png"></img>
+                    <div>
+                        <img src="http://mat1.gtimg.com/chinanba/web/statics/media-wx-qrcode_af2888.png"/>
+                    </div>
                 </li>
                  <li>
                     <a href="#">
                         <img src="css/images/icon_weibo.jpg"/>
                         <span>NBASTORE</span>
                     </a>
-                    <img class="media-qrcore" src="http://mat1.gtimg.com/chinanba/web/statics/media-pz-qrcode_9485b6.png"></img>
+                    <div>
+                        <img src="http://mat1.gtimg.com/chinanba/web/statics/media-wx-qrcode_af2888.png"/>
+                    </div>
                 </li>
                  <li>
                     <a href="#">
                         <img src="css/images/icon_weibo.jpg"/>
                         <span>NBA鞋会</span>
                     </a>
-                    <img class="media-qrcore" src="http://mat1.gtimg.com/chinanba/web/statics/media-pz-qrcode_9485b6.png"></img>
+                    <div>
+                        <img src="http://mat1.gtimg.com/chinanba/web/statics/media-wx-qrcode_af2888.png"/>
+                    </div>
                 </li>
             </ul>
         </div>
@@ -544,10 +577,21 @@
     <script type="text/javascript" src="js/owl.carousel.js"></script>
     <script type="text/javascript" src="js/focus.js"></script>
     <script>
-        $('.media-share-list').has('a').hover(function(){
-//            var = div1 = $('')
-//            for(var i=0;i<div1.length;i++)
-            $('.media-qrcore').stop().slideToggle();
+//        $('.media-share-list').find('a').hover(function(){
+////            var = div1 = $('')
+////            for(var i=0;i<div1.length;i++)
+//            $('.media-share').find('img').not('a img').eq($(this).index).stop().slideToggle();
+//        })
+        
+        $(function(){
+            
+            $('.media-share-list').find('li').hover(function(){
+                
+                $('#media-share').find('div').eq($(this).index()).stop().slideToggle(300);
+                
+            })
+            
         })
     </script>
+    <script src="js/main.js"></script>
 </html>

@@ -176,6 +176,57 @@ header {
 }
 
 
+/*导航栏固定*/
+.nav-fixed {
+    height: 50px;
+    line-height: 50px;
+    background: #006bb7;
+}
+.nav-fixed .NBA-logo {
+    padding-left: 20px;
+    display: block;
+    float: left;
+    width: 16px;
+    height: 50px;
+    background: url(../css/images/logo-new-small_7ac3d0.png) no-repeat 0px 10px;
+}
+.nav-fixed {
+    color: #FFF;
+    font-weight: 900;
+    font-size: 35px;
+    
+}
+.nav-fixed ul{
+/*    padding: 0px 0px;*/
+    margin-left: 150px;
+    
+/*    line-height: 50px;*/
+}
+
+.nav-fixed ul li {
+    float: left;
+    width: 80px;
+    height: 50px;
+    
+}
+
+.nav-fixed ul>li>a {
+    
+   color:#fff;
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*主体部分*/
 .main-bg {
@@ -759,17 +810,27 @@ header {
     position: relative;
 }
 
+/*
 .media-share-list .media-qrcore {
+    
+    
+   
+     background: #aaa;
+}
+*/
+#media-share div {
     display: none;
     position: absolute; 
     bottom: 80px;
-    left: 0px;
+    left: 0px; 
+    
+}
+#media-share div>img{
     width: 138px;
     height: 138px;
     border-radius: 4px;
-    background: #aaa;
+    cursor: pointer;
 }
-
 
 /*合作伙伴*/
 

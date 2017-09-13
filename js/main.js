@@ -1,0 +1,5 @@
+//$(function(){
+//    
+//    $("media-share").has('')
+//    
+//})
