@@ -51,6 +51,6 @@ $(document).ready(function () {
 		});
     
     //更多资讯按钮
-    $('moreinfo-btn')
+    $('moreinfo-btn').hover
     
 });
