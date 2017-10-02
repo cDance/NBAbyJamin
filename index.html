@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/master.css"/>
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/owl.carousel.css" />
+    <link rel="stylesheet" href="css/reset.css" />
 </head>
 <body>
 <!--   头部-->
@@ -20,17 +21,29 @@
                    </a>
                 </div>
                 <div class="header-top-r frt">
-                   <a><img src="css/images/jr.png"/></a> 
-                    <a><img src="css/images/nbaapp.png"/></a>
-                    <a><img src="css/images/daynba.png"/></a> 
-                    <a><img src="css/images/nba%20fun.png"/></a>
-                    <a><img src="css/images/nbastore.png"/></a>
+                   <a href="#"><img src="css/images/jr.png"/></a> 
+                    <a href="#"><img src="css/images/nbaapp.png"/></a>
+                    <a href="#"><img src="css/images/daynba.png"/></a> 
+                    <a href="#"><img src="css/images/nba%20fun.png"/></a>
+                    <a href="#" class="a-btn">
+                        <img src="css/images/nbastore.png"/>
+                        <i id="oi" class="down"></i>
+                    </a>
+                    <ul class="ulbtn" >
+                        <li><a href="#">球衣</a></li>
+                        <li><a href="#">球裤</a></li>
+                        <li><a href="#">T-shirt</a></li>
+                        <li><a href="#">球鞋</a></li>
+                        <li><a href="#">科比专区</a></li>
+                        <li><a href="#">库里专区</a></li>
+                        <li><a href="#">乔丹专区</a></li>
+                    </ul>  
                 </div>
             </div>
             <div class="header-bottom clearfix">
                 <div class="header-bottom-left-nav content flt">  
                     <ul>
-                       <li><a href="#">首页</a></li>
+                       <li><a href="#" style="color: #00aeff">首页</a></li>
                        <li><a href="#">视频</a></li>
                        <li><a href="#">新闻</a></li>
                        <li><a href="#">图集</a></li>
@@ -40,11 +53,7 @@
                        </li>
                        <li>
                            <a href="#">球员</a>  
-                           <img src="css/images/arrow_down.png"> 
-                           <ul class="nav-submenu" >
-                               <li><a>现役球员</a></li>
-                               <li><a>退役球员</a></li>
-                           </ul>     
+                           <img src="css/images/arrow_down.png">    
                        </li>
                        <li>
                            <a href="#">赛程</a>    
@@ -67,18 +76,19 @@
                            <img src="css/images/arrow_down.png"/>                      
                        </li>
                     </ul>
-               <div class="header-bottom-rightbox frt"> 
-                   <a class="nav-serch flt">
-                   </a>
-               <div class="nav-user flt"></div>
-           </div>  
+                   <div class="header-bottom-rightbox frt"> 
+                       <a class="nav-serch flt">
+                       </a>
+                   <div class="nav-user flt"></div>
+                   </div>  
                </div>
                
             </div>
            
         </div>
 <!--        固定导航栏-->
-        <div class="nav-fixed content" id="nav-fixed">
+<!--
+        <div class="nav-fixed" id="nav-fixed">
             <span class="NBA-logo">NBA</span>
 	        <ul>
                 <li><a href="#">首页</a></li>
@@ -94,6 +104,48 @@
                 <li><a href="#">更多</a></li>
 	        </ul>
         </div>
+-->
+       <div class="nav-fixed content" id="nav-fixed"> 
+<!--                   <i class="NBA-logo"></i>-->
+                   <span class="NBA-logo">NBA</span> 
+                    <ul>
+                       <li><a href="#" style="color: #00aeff">首页</a></li>
+                       <li><a href="#">视频</a></li>
+                       <li><a href="#">新闻</a></li>
+                       <li><a href="#">图集</a></li>
+                       <li>
+                           <a href="#">球队</a>    
+                           <img src="css/images/arrow_down.png">     
+                       </li>
+                       <li>
+                           <a href="#">球员</a>  
+                           <img src="css/images/arrow_down.png">    
+                       </li>
+                       <li>
+                           <a href="#">赛程</a>    
+                           <img src="css/images/arrow_down.png"/>                   
+                       </li>
+                        <li>
+                           <a href="#">排名</a>    
+                           <img src="css/images/arrow_down.png"/>                     
+                       </li>
+                        <li>
+                           <a href="#">数据</a>    
+                           <img src="css/images/arrow_down.png"/>                      
+                       </li>
+                        <li>
+                           <a href="#">专题</a>    
+                           <img src="css/images/arrow_down.png"/>                      
+                       </li>
+                        <li>
+                           <a href="#">更多</a>    
+                           <img src="css/images/arrow_down.png"/>                      
+                       </li>
+                    </ul>
+                   <div class="nav-user frt"></div>
+               </div>
+               
+            </div>
     </header>
     
 <!--  banner及主体部分-->
@@ -174,15 +226,19 @@
                        <div class="main-lastest-news-article-t">
                            <div class="lastest-news-article1">
                                <a href="#">
-                                   <img class="demoimg" src="images/kevin2.jpg" />
+                                  <div class="news-wrap">
+                                      <img src="images/kevin2.jpg" />
+                                  </div>
                                    <span class="article-title">
                                        曝快船队与拉唐蒂-亨顿签下一份训练营合同
                                    </span>
                                </a>
                            </div>
                            <div class="lastest-news-article2 ml10">
-                               <a>
-                                   <img src="images/kevin2.jpg" />
+                               <a href="#">
+                                   <div class="news-wrap">
+                                      <img src="images/kevin2.jpg" />
+                                   </div>
                                    <span class="article-title">
                                        曝快船队与拉唐蒂-亨顿签下一份训练营合同
                                    </span>
@@ -192,21 +248,27 @@
                        <div class="main-lastest-news-article-b">
                            <div class="lastest-news-articlea mt10">
                                <a href="#">
-                                   <img src="images/kevin1021.jpg" />
-                                   <span class="articleb-title">专栏：骑凯交易或直接影响东部榜首归属</span>
-                                   <span class="articleb-time">2017-8-15 18:33</span> 
+                                  <div class="news-wrap">
+                                      <img src="images/kevin1021.jpg" />
+                                  </div>
+                                  <span class="articleb-title">专栏：骑凯交易或直接影响东部榜首归属</span>
+                                  <span class="articleb-time">2017-8-15 18:33</span> 
                                </a>
                            </div>
                            <div class="lastest-news-articleb ml10 mt10">
-                               <a>
-                                   <img src="images/kevin1021.jpg" />
+                               <a href="#">
+                                   <div class="news-wrap">
+                                      <img src="images/kevin1021.jpg" />
+                                   </div>
                                    <span class="articleb-title">专栏：骑凯交易或直接影响东部榜首归属</span>
                                    <span class="articleb-time">2017-8-15 18:33</span> 
                              </a>
                            </div>
                            <div class="lastest-news-articlec ml10 mt10">
-                               <a>
-                                   <img src="images/kevin1021.jpg" />
+                               <a href="#">
+                                   <div class="news-wrap">
+                                      <img src="images/kevin1021.jpg" />
+                                   </div>
                                    <span class="articleb-title">专栏：骑凯交易或直接影响东部榜首归属</span>
                                    <span class="articleb-time"> 2017-8-15 18:33</span>  
                              </a>
@@ -214,8 +276,8 @@
                        </div>
                        <div class="main-lastest-more-info mt10 clearfix">
                             <a href="#">
-                            <span class="moreinfo-btn">更多资讯</span>
-                       </a>
+                                <span class="moreinfo-btn">更多资讯</span>
+                           </a>
                        </div> 
                    </div>
                    <div class="main-wrap-right-rank mt15 frt">        
@@ -232,7 +294,7 @@
                 视频
             </div>
             <div class="vidio-tab flt">
-                <span>比赛</span>
+                <span class="redbar">比赛</span>
                 <span>最佳</span>
                 <span>专题</span>  
             </div>
@@ -577,21 +639,8 @@
     <script type="text/javascript" src="js/owl.carousel.js"></script>
     <script type="text/javascript" src="js/focus.js"></script>
     <script>
-//        $('.media-share-list').find('a').hover(function(){
-////            var = div1 = $('')
-////            for(var i=0;i<div1.length;i++)
-//            $('.media-share').find('img').not('a img').eq($(this).index).stop().slideToggle();
-//        })
         
-        $(function(){
-            
-            $('.media-share-list').find('li').hover(function(){
-                
-                $('#media-share').find('div').eq($(this).index()).stop().slideToggle(300);
-                
-            })
-            
-        })
+       
     </script>
     <script src="js/main.js"></script>
 </html>
