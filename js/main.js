@@ -51,6 +51,23 @@ $(document).ready(function () {
 		});
     
     //更多资讯按钮
-    $('moreinfo-btn').hover
+    $('.main-lastest-more-info').hover(function(){
+        $(this).find('span').css("color","#FFF");
+        $(this).css("background-color","#2464b5");
+        $(this).find('span').attr("class","moreinfo-btn1");
+    },function(){
+        $(this).find('span').css("color","#2464b5");
+        $(this).css("background-color","#F0F0F0");
+        $(this).find('span').attr("class","moreinfo-btn");
+    });
     
+    //导航字体颜色
+    var aA=$('.header-bottom').find('a');
+        for(var i=0;i<aA;i++){
+//            aA[i].index=i;
+            aA[i].onclick=function(){
+                aA[i].css("color","red");
+                alert(this.index);
+            }
+        }
 });
