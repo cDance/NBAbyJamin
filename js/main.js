@@ -70,4 +70,24 @@ $(document).ready(function () {
                 alert(this.index);
             }
         }
+    
+    //视频tab
+    var aSpan=document.getElementsByClassName("nav-tab")[0].getElementsByTagName("span");
+        var aDiv=document.getElementById("tab-wrap").getElementsByClassName("video_img_tra");
+//        alert(aDiv.length);
+        
+        for(var i=0;i<aSpan.length;i++){
+            aSpan[i].index=i;
+            aSpan[i].onclick=function(){
+                
+                for(var i=0;i<aDiv.length;i++){
+                    aSpan[i].className=" ";
+                    aDiv[i].style.display="none";
+                    
+                }
+            this.className="active";
+            aDiv[this.index].style.display="block";    
+            }
+        }
 });
+
