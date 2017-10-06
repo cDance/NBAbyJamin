@@ -134,22 +134,30 @@ header {
 
 .header-bottom-left-nav {
     margin-left: 15px;
+/*    margin-bottom: 5px;*/
 }
 
- .header-bottom-left-nav ul >li {
+ .header-bottom-left-nav ul li {
     position: relative;
-    margin-top: -3px;
+/*    margin-top: -3px;*/
     float: left;
     width: 80px;
-    height: 40px;
-    font-size: 16px;
-    line-height: 40px;
+    height: 35px;
+/*    line-height: 35px;*/
     text-align: center;
-    
+     background: url(../css/images/arrow_down.png) no-repeat 60px 15px;
 } 
 
-.header-bottom-left-nav ul >li >a {
-/*    position: relative;*/
+/*
+.header-bottom-left-nav ul li a {
+    padding: 5px;
+    color: #fff;
+}
+*/
+.header-bottom-left-nav ul li a {
+    padding: 5px 0px;
+    display: block;
+    font-size: 16px;  
     color: #fff;
 }
 
@@ -158,8 +166,61 @@ header {
     text-decoration: none;
 }
 
+.header-bottom-left-nav ul li ul {
+    display: none;
+}
+
+.header-bottom-left-nav ul li ul{
+    margin-top: 9px;  
+    margin-left: 10px;
+}
+
+.header-bottom-left-nav ul li ul li {
+    width: 160px;
+    height: 40px;
+    color: #FFF;
+    text-align: left;
+    background: #002f50;
+}
+.header-bottom-left-nav ul > li > ul > li > a {
+    font-size: 14px;
+    padding-left: 15px;
+}
+.header-bottom-left-nav ul > li > ul > li:hover {
+    background: #2464b5;
+}
+
+.header-bottom-left-nav ul li:hover .ul1 {
+   display: block;
+}
+.header-bottom-left-nav ul li ul {
+    position: relative;
+}
+.header-bottom-left-nav ul li ul .subtab-icon {
+    position: absolute;
+    top: -6px;
+    left: 22px;
+    display: block;
+    width: 12px;
+    height: 6px;
+    background: url(../css/images/nav-menu-arrow_4dfd68.png) no-repeat;
+} 
+.header-bottom-left-nav div {
+    display: none;
+    width: 250px;
+    height: 200px;
+    background: green;
+}
+
+.header-bottom-left-nav ul li:hover .team-all-wrap{
+    display: block;
+}
+
+
+
+
 .header-bottom-rightbox .nav-serch {
-    padding-right: 13px;
+    padding-right: 15px;
     width: 35px;
     height: 30px;
     cursor: pointer;
@@ -173,7 +234,6 @@ header {
     cursor: pointer;
     background: url(images/icon_user.png) no-repeat; 
 }
-
 
 
 
