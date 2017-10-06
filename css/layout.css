@@ -125,14 +125,14 @@ header {
 
 
 
-
-
 /*导航栏*/
 .header-bottom {
+
     height: 40px;
 }
 
 .header-bottom-left-nav {
+   
     margin-left: 15px;
 /*    margin-bottom: 5px;*/
 }
@@ -205,18 +205,28 @@ header {
     height: 6px;
     background: url(../css/images/nav-menu-arrow_4dfd68.png) no-repeat;
 } 
-.header-bottom-left-nav div {
+.header-bottom .header-bottom-left-nav div {
     display: none;
-    width: 250px;
-    height: 200px;
+    position: absolute;
+    top: 40px;
+    left: -335px;
+    width: 1200px;
+    height: 442px;
     background: green;
+    z-index: 100;
 }
+.header-bottom {
+    position: relative;
+}
+
 
 .header-bottom-left-nav ul li:hover .team-all-wrap{
     display: block;
 }
 
-
+.header-bottom-left-nav  .no-arrow {
+    background: none;
+}
 
 
 .header-bottom-rightbox .nav-serch {
@@ -234,6 +244,7 @@ header {
     cursor: pointer;
     background: url(images/icon_user.png) no-repeat; 
 }
+
 
 
 
