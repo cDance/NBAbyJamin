@@ -1,7 +1,7 @@
 @charset "uft-8 ";
 /*重置样式 可以覆盖*/
 body,div,p,ul,ol,dl,dt,dd,li,form,input,table,th,td,img,h1,h2,h3,h4,h5,h6 { margin: 0;padding: 0;}
-
+/** { margin: 0;padding: 0;}*/
 
 body { background: #FFF; color: #000; font-size: 12px; font-style: normal; font-family:'Microsoft Yahei','寰蒋闆呴粦','Simsun','瀹嬩綋','Arial', sans-serif;}
 em, b, i { font-style:normal;}
@@ -33,3 +33,6 @@ table { border-spacing:0; border-collapse:collapse;}
 .pt10 {padding-top: 10px;}
 .pt20 {padding-top: 20px;}
 
+.blue {color: #00aeff;}
+.gray {color: #838383;}
+.org  {color: #ef9111;}
