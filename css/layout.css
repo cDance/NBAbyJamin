@@ -2,12 +2,13 @@
 header {
     background: #006bb7;
 }
-.header-bg{
+.header-bg {
     width: 100%;
     height: 120px;
     background: url(../images/header-bg.png) no-repeat;
     
 }
+
 .content {
     width: 1200px;
     margin: 0 auto; 
@@ -20,18 +21,9 @@ header {
     background: #fff;
 }
 
-.header-top {
-     height :80px;
-     
-}
-
-.header-top-l, .header-top-r{
+.header-top-l, .header-top-r {
     height: 80px;
     line-height: 80px;
-}
-
-.header-top-l .NBAlogo{
-    padding-top: 10px;
 }
 
 .header-top-l a:hover {
@@ -53,73 +45,52 @@ header {
 .header-top-r {
     position: relative;
     margin-top: -15px;
-    margin-right: 16px;
 }
 
 .header-top-r a {
-    position: relative;
     padding-left: 5px;
 }
 
-.header-top-r a i {
-    display: block;
-    width: 10px;
-    height: 5px;
-}
 
-.header-top-r .down {
-    position: absolute;
-    top: 0px;
-    right: -12px;
-    background: url(images/triangle_down_new_d66543.png) no-repeat;
-}
-
-.header-top-r .up {
-    position: absolute;
-    top: 0px;
-    right: -12px;
-    background: url(images/triangle_up_new_d66543.png) no-repeat;
-}
-
-
-
-/*
-.header-top-r .a-btn {
-    background: url(images/nbastore.png) no-repeat;
-}
-*/
-
-
-.header-top-r ul {
+.header-top-r ul.nba-goods {
     display: none;
     position: absolute;
-    top: 50px;
-    right: -15px;
-    border-radius: 5px;
+    top: 46px;
+    right: -2px;
+    z-index: 111;
 }
-.header-top-r  ul li {
-/*    float: left;*/
-    padding-left: 15px;
-    width: 80px;
+.header-top-r  ul.nba-goods li {
+    padding-left: 5px;
+    width: 85px;
     height: 40px;
-    color: #fff;
     line-height: 40px;
-    text-align: left;
     background: #002f50;  
 }
 
-.header-top-r  ul li:hover {
+.header-top-r  ul.nba-goods li:hover {
     background: #2464b5;
 }
 
-.header-top-r  ul li a {
+.header-top-r  ul.nba-goods li a {
     color: #fff;
     font-size: 14px;
     
 }
 
-
-
+.header-top-r .nbastore-btn .up {
+    float: right;
+    margin-top: 12px;
+    width: 9px;
+    height: 30px;
+    background: url(images/triangle_down_new_d66543.png) no-repeat center 20px;
+}
+.header-top-r .nbastore-btn .down {
+    float: right;
+    margin-top: 12px;
+    width: 9px;
+    height: 30px;
+    background: url(images/triangle_up_new_d66543.png) no-repeat center 20px;
+}
 
 
 
@@ -129,30 +100,22 @@ header {
     height: 40px;
 }
 
-.header-bottom-left-nav {
+.nav-menu {
+    position: relative;
     margin-left: 15px;
-/*    margin-bottom: 5px;*/
 }
 
- .header-bottom-left-nav ul li {
+ .nav-menu ul li {
     position: relative;
-/*    margin-top: -3px;*/
     float: left;
     width: 80px;
     height: 40px;
-/*    line-height: 35px;*/
     text-align: center;
      background: url(../css/images/arrow_down.png) no-repeat 60px 20px;
 } 
 
-/*
-.header-bottom-left-nav ul li a {
-    padding: 5px;
-    color: #fff;
-}
-*/
-.header-bottom-left-nav ul li a {
-/*    padding: 5px 0px;*/
+
+.nav-menu ul li a {
     display: block;
     height: 40px;
     line-height: 40px;
@@ -160,42 +123,55 @@ header {
     color: #fff;
 }
 
-.header-bottom-left-nav ul li a:hover {
+.nav-menu ul li a:hover {
     color: #00aeff;
     text-decoration: none;
 }
 
-.header-bottom-left-nav ul li ul {
+.nav-menu ul li ul {
     display: none;
 }
 
-.header-bottom-left-nav ul li ul{
-/*    margin-top: 9px;  */
+.nav-menu ul li ul{
     margin-left: 10px;
 }
 
-.header-bottom-left-nav ul li ul li {
+.nav-menu ul li ul li {
     width: 160px;
     height: 40px;
     color: #FFF;
     text-align: left;
     background: #002f50;
 }
-.header-bottom-left-nav ul > li > ul > li > a {
+.nav-menu ul > li > ul > li > a {
     font-size: 14px;
     padding-left: 15px;
 }
-.header-bottom-left-nav ul > li > ul > li:hover {
+.nav-menu ul > li > ul > li:hover {
     background: #2464b5;
 }
 
-.header-bottom-left-nav ul li:hover .ul1 {
+.nav-menu ul li:hover .ul1 {
    display: block;
 }
-.header-bottom-left-nav ul li ul {
+.nav-menu ul li ul {
     position: relative;
 }
-.header-bottom-left-nav ul li ul .subtab-icon {
+.nav-menu ul li i.subtab-team-icon {
+    position: absolute;
+    top: -8px;
+    left: 365px;
+    width: 12px;
+    height: 6px;
+    background: url(../css/images/nav-menu-arrow_4dfd68.png) no-repeat;
+} 
+
+.nav-menu .no-arrow {
+    background: none;
+}
+
+
+.nav-menu ul li ul .subtab-icon {
     position: absolute;
     top: -6px;
     left: 22px;
@@ -204,12 +180,13 @@ header {
     height: 6px;
     background: url(../css/images/nav-menu-arrow_4dfd68.png) no-repeat;
 } 
-.header-bottom-left-nav .no-arrow {
+.nav-menu .no-arrow {
     background: none;
 }
 
-.header-bottom-left-nav ul li .nav-team {
-    display: -none;
+
+.nav-menu ul li .nav-team {
+    display: none;
     position: absolute;
     top: 40px;
     left: -335px;
@@ -219,23 +196,21 @@ header {
     font-size: 100px;
     z-index: 1627;
     border: 2px solid #002f50;
-/*    box-sizing: content-box;*/
 }
 
 
-.header-bottom-left-nav ul li:hover .nav-team {
+.nav-menu ul li:hover .nav-team {
     display: block;
 }
 
-.header-bottom-left-nav .nav-team .east-team {
+.nav-menu .nav-team .east-team {
     float: left;
     display: block;
     width: 597px;
     height: 440px;
-/*    background: green;*/
     border-right: 1px solid #aaa;
 }
-.header-bottom-left-nav .nav-team .team-title {
+.nav-menu .nav-team .team-title {
     
     width: 597px;
     height: 50px;
@@ -244,8 +219,9 @@ header {
     color: #fff;
     text-align: center;
     background: #002f50;
+    
 }
-.header-bottom-left-nav .nav-team .team-area {
+.nav-menu .nav-team .team-area {
     float: left;
     font-size: 14px;
     width: 199px;
@@ -254,15 +230,15 @@ header {
     text-align: center;
     background: #f7f5f5;  /*将颜色提取成伪类，方便修改*/
 }
-.header-bottom-left-nav .nav-team li{
+.nav-menu .nav-team li{
     background: none;
 }
-.header-bottom-left-nav .nav-team .team-list {
+.nav-menu .nav-team .team-list {
     width: 597px;
     height: 70px;
 }
 
-.header-bottom-left-nav .nav-team .team-list a {
+.nav-menu .nav-team .team-list a {
     padding-left: 111px;
     display: block;
     float: left;
@@ -273,65 +249,65 @@ header {
     font-size: 14px;
     background: url(../images/homepageteamlogos.png) no-repeat;
 }
-.header-bottom-left-nav .nav-team .team-list a:hover {
+.nav-menu .nav-team .team-list a:hover {
     background-color: #e5e5e5;   /*如果只用background就会覆盖掉url*/
 }
 
 
 
 /*官方写法*/
-.header-bottom-left-nav .nav-team a.label-hornets {
+.nav-menu .nav-team a.label-hornets {
     background-position: 35px -922px;
 }
-.header-bottom-left-nav .nav-team a.label-cavaliers {
+.nav-menu .nav-team a.label-cavaliers {
     background-position: 38px -492px;;
 }
-.header-bottom-left-nav .nav-team a.label-raptors {
+.nav-menu .nav-team a.label-raptors {
     background-position: 36px -330px;
 }
-.header-bottom-left-nav .nav-team a.label-hawks {
+.nav-menu .nav-team a.label-hawks {
     background-position: 37px -839px;
 }
-.header-bottom-left-nav .nav-team a.label-bulls {
+.nav-menu .nav-team a.label-bulls {
     background-position: 41px -418px;
 }
-.header-bottom-left-nav .nav-team a.label-knicks {
+.nav-menu .nav-team a.label-knicks {
     background-position: 37px -167px;
 }
-.header-bottom-left-nav .nav-team a.label-wizards {
+.nav-menu .nav-team a.label-wizards {
     background-position: 39px -1170px;
 }
-.header-bottom-left-nav .nav-team a.label-pistons {
+.nav-menu .nav-team a.label-pistons {
     background-position: 37px -572px;
 }
 
-.header-bottom-left-nav .nav-team a.label-celtics {
+.nav-menu .nav-team a.label-celtics {
     background-position: 38px -8px;
 }
 
-.header-bottom-left-nav .nav-team a.label-magic {
+.nav-menu .nav-team a.label-magic {
     background-position: 36px -1084px;
 }
 
-.header-bottom-left-nav .nav-team a.label-pacers {
+.nav-menu .nav-team a.label-pacers {
     background-position: 37px -651px
 }
 
-.header-bottom-left-nav .nav-team a.label-nets {
+.nav-menu .nav-team a.label-nets {
     background-position: 38px -93px;
 }
-.header-bottom-left-nav .nav-team a.label-heat {
+.nav-menu .nav-team a.label-heat {
     background-position: 37px -1006px;
 }
-.header-bottom-left-nav .nav-team a.label-bucks {
+.nav-menu .nav-team a.label-bucks {
     background-position: 39px -740px;
 }
-.header-bottom-left-nav .nav-team a.label-sixers {
+.nav-menu .nav-team a.label-sixers {
     background-position: 39px -248px;
 }
 
 
-.header-bottom-left-nav .nav-team .west-team {
+.nav-menu .nav-team .west-team {
     float: left;
     display: block;
     width: 597px;
@@ -340,7 +316,7 @@ header {
     border-left: 1px solid #aaa;
 }
 
-.header-bottom-left-nav ul li div ul {
+.nav-menu ul li div ul {
    margin: 0;  /* ul默认左右有margin*/
 }
 
@@ -351,13 +327,12 @@ header {
 
 
 .header-bottom-rightbox {
+    position: relative;
     width: 100px;
-    background: red;
 }
 
 .header-bottom-rightbox .nav-serch {
-    display: block;
-/*    display: inline-block;*/
+/*    display: block;*/
     padding-right: 15px;
     width: 35px;
     height: 30px;
@@ -366,15 +341,52 @@ header {
 }
 
 .header-bottom-rightbox .nav-user {
-    display: block;
+/*    display: block;*/
     padding-right: 20px;
     width: 30px;
     height: 30px;
-    cursor: pointer;
     background: url(images/icon_user.png) no-repeat; 
 }
+.header-bottom-rightbox span:hover ul.user-log{
+    display: block;
+}
 
+.header-bottom-rightbox ul.user-log {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 5px;
+}
+.header-bottom-rightbox .user-log li {
+    width: 150px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+    background: #002f50;
+}
 
+.header-bottom-rightbox .user-log li a.login-abtn {
+    margin-left: 10px;
+    display: block;
+    width: 130px;
+    height: 25px;
+    line-height: 25px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 20px;
+    background-color: #08c;
+}
+
+.header-bottom-rightbox .user-log i {
+    position: absolute;
+    top: -6px;
+    right: 25px;
+    display: block;
+    width: 12px;
+    height: 6px;
+    background: url(../css/images/nav-menu-arrow_4dfd68.png) no-repeat;
+}
 
 
 
@@ -1174,7 +1186,7 @@ header {
 
 
 
-.footer-wrap{
+.footer-wrap {
     width: 100%;
     height: 415px;
 }

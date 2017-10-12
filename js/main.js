@@ -18,23 +18,24 @@ $(document).ready(function () {
 
     //    nba store下拉菜单：
     var timer = null;
-    $('.a-btn ,.ulbtn').hover(function () {
+    $('.nbastore-btn ,.nba-goods').hover(function () {
         clearInterval(timer);
         setTimeout(function () {
             $('#oi').attr('class', 'up');
-            $(".ulbtn").stop().slideDown(300);
+            $(".nba-goods").stop().slideDown(200);
         }, 300);
 
     }, function () {
         clearInterval(timer);
         setTimeout(function () {
             $('#oi').attr('class', 'down');
-            $(".ulbtn").stop().slideUp(300);
+            $(".nba-goods").stop().slideUp(200);
         }, 300);
 
     });
     
-    //定位菜单
+    
+    //    定位菜单
     var oNav = $('#nav-fixed'),
 		oNav_SH =oNav.offset();
 	$(document).on('scroll',function(){
