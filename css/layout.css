@@ -100,12 +100,18 @@ header {
     height: 40px;
 }
 
+/*
 .nav-menu {
+    
+    margin-left: 15px;
+}
+*/
+.nav-menu ul {
     position: relative;
     margin-left: 15px;
 }
 
- .nav-menu ul li {
+.nav-menu ul li {
     position: relative;
     float: left;
     width: 80px;
