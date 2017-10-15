@@ -24,14 +24,18 @@ table { border-spacing:0; border-collapse:collapse;}
 .ml10 {margin-left: 10px;}
 .ml20 {margin-left: 20px;}
 .ml28 {margin-left: 28px;   /*这里通用的属性可以放上面*/}
+.ml75 {margin-left: 75px}
 .mr20 {margin-right: 20px;}
+.mt3  {margin-top: 3px;}
 .mt10 {margin-top: 10px;}
 .mt20 {margin-top: 20px;}
 .mt30 {margin-top: 30px;}
 .mt15 {margin-top: 15px;}
 .mb10 {margin-bottom: 10px;}
 .pt10 {padding-top: 10px;}
+.pl30 {padding-left: 30px;}
 .pt20 {padding-top: 20px;}
+.pr20 {padding-right: 20px;}
 
 .blue {color: #00aeff;}
 .gray {color: #838383;}

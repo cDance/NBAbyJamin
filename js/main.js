@@ -90,5 +90,34 @@ $(document).ready(function () {
             aDiv[this.index].style.display="block";    
             }
         }
+    
+    
+    // 搜索框
+    $('#nav-search').click(function(){
+        $("#search-bar").show().animate({
+            width: '150',
+        });
+    });
+    
+    $('.nav-user').hover(function(){
+        $('.user-log').toggle();
+    });
+    
+    
+    // rank
+    var aA = document.getElementById('rank-tab').getElementsByTagName('a');
+    var aTable = document.getElementById('rank-content').getElementsByTagName("div");
+    for (var i = 0; i < aA.length; i++) {
+        aA[i].index = i;
+        aA[i].onclick = function() {
+            for (var i = 0; i < aTable.length; i++) {
+                aA[i].className = " ";
+                aTable[i].style.display = "none";
+            }
+            this.className = "active";
+            aTable[this.index].style.display = "block";
+        }
+    }
+    
 });
 
