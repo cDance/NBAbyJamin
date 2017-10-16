@@ -34,6 +34,15 @@ $(document).ready(function () {
 
     });
     
+     // 搜索框 --全局
+    $("#nav-search").click(function(){
+        $("#search-bar").show().animate({
+            width: '150',
+        });
+    });
+     $('.nav-user').hover(function(){
+        $('.user-log').toggle();
+    });
     
     //    定位菜单
     var oNav = $('#nav-fixed'),
@@ -61,17 +70,10 @@ $(document).ready(function () {
         $(this).css("background-color","#F0F0F0");
         $(this).find('span').attr("class","moreinfo-btn");
     });
+  
     
-    //导航字体颜色
-    var aA=$('.header-bottom').find('a');
-        for(var i=0;i<aA;i++){
-//            aA[i].index=i;
-            aA[i].onclick=function(){
-                aA[i].css("color","red");
-                alert(this.index);
-            }
-        }
-    
+   
+   
     //视频tab
     var aSpan=document.getElementsByClassName("nav-tab")[0].getElementsByTagName("span");
         var aDiv=document.getElementById("tab-wrap").getElementsByClassName("video_img_tra");
@@ -89,21 +91,8 @@ $(document).ready(function () {
             this.className="active";
             aDiv[this.index].style.display="block";    
             }
-        }
-    
-    
-    // 搜索框
-    $('#nav-search').click(function(){
-        $("#search-bar").show().animate({
-            width: '150',
-        });
-    });
-    
-    $('.nav-user').hover(function(){
-        $('.user-log').toggle();
-    });
-    
-    
+        };
+   
     // rank
     var aA = document.getElementById('rank-tab').getElementsByTagName('a');
     var aTable = document.getElementById('rank-content').getElementsByTagName("div");
@@ -117,7 +106,8 @@ $(document).ready(function () {
             this.className = "active";
             aTable[this.index].style.display = "block";
         }
-    }
+    };
     
 });
+
 

@@ -513,7 +513,7 @@ header {
     display: none;
     position: absolute;
     top: 50px;
-    left: 445px;
+    left: -445px;
     width: 1196px;
     height: 440px;
     background: #fff;
@@ -1138,21 +1138,25 @@ header {
 #oTable tr td {
     position: relative;
     font-size: 14px;
+    color: #000;
     transition: background .125s cubic-bezier(0.6, -0.07, 1, 1);
+}
+#oTable tr:hover {
+    background-color: #dedede;
+    z-index: 8884;
 }
 
 #oTable .team-icon {
+    margin-right: 20px;
     position: absolute;
     top: 0px;
     left: 10px;
-    margin-right: 20px;
     width: 28px;
     height: 28px;
-    /*        background: #09c;*/
 }
 
 .rank-content .gray {
-    background: #DCDCDC;
+    background: #f0f0f0;
 }
 
 .rank-content .blue-border {
@@ -1160,12 +1164,11 @@ header {
 }
 
 .rank-content .gray1 {
-    background: #DCDCDC;
+    background: #efeded;
 }
 
 .rank-content .gray2 {
-    background: #D3D3D3;
-    /*        opacity: 30;*/
+    background: #e8e8e8;
 }
 
 .rank-content .bold {
@@ -1374,7 +1377,7 @@ header {
 }
 
 .research-choice {
-    /*    padding: 15px;*/
+    position: relative;
     width: 285px;
     height: 350px;
     background: url(../css/images/research-choice.png)no-repeat;
@@ -1399,18 +1402,41 @@ header {
     margin-right: 6px;
 }
 
-.research-btn span {
+.research-btn {
+    position: absolute;
+    bottom: 100px;
+    left: 0px;
+}
+.research-btn a {
+    margin-left: 15px;
+    display: block;
     float: left;
     width: 120px;
-    height: 50px;
-    line-height: 50px;
-    text-align: center;
-    background: #000;
-}
-.research-btn span a {
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
     color: #fff;
+    text-align: center;
+    
+    cursor: pointer;
+}
+.research-btn a.commit {
+    background: #2464b5;
+}
+.research-btn a.check {
+    color: #000;
+    background: #e5e5e5;
 }
 
+.research-btn a:hover {
+    text-decoration: none;
+}
+.research-btn a.commit:hover {
+    background: #0088E6;
+}
+.research-btn a.check:hover {
+    background: #9E9E9E;
+}
 
 .foul-handbook {
     position: absolute;
