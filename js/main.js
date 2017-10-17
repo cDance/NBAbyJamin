@@ -1,11 +1,3 @@
-//
-//$(function () {
-//
-//     
-//         
-// }),
-// 
-
 
 $(document).ready(function () {
     //    media-share qrcore功能：
@@ -17,16 +9,16 @@ $(document).ready(function () {
 
 
     //    nba store下拉菜单：
-    var timer = null;
+    var timer_Menu = null;
     $('.nbastore-btn ,.nba-goods').hover(function () {
-        clearInterval(timer);
+        clearInterval(timer_Menu);
         setTimeout(function () {
             $('#oi').attr('class', 'up');
             $(".nba-goods").stop().slideDown(200);
         }, 300);
 
     }, function () {
-        clearInterval(timer);
+        clearInterval(timer_Menu);
         setTimeout(function () {
             $('#oi').attr('class', 'down');
             $(".nba-goods").stop().slideUp(200);
@@ -34,22 +26,35 @@ $(document).ready(function () {
 
     });
     
+    //    nba-use login：
+    var timer_User = null;
+    $('.nav-user').hover(function () {
+        clearInterval(timer_User);
+        setTimeout(function () {
+            $('.user-log').stop().show();
+        }, 1000);
+    }, function () {
+        clearInterval(timer_User);
+        setTimeout(function () {
+           $('.user-log').stop().hide();
+        },1000);
+    });
+    
+    
+    
      // 搜索框 --全局
     $("#nav-search").click(function(){
         $("#search-bar").show().animate({
             width: '150',
         });
     });
-     $('.nav-user').hover(function(){
-        $('.user-log').toggle();
-    });
+     
+    
     
     //    定位菜单
     var oNav = $('#nav-fixed'),
 		oNav_SH =oNav.offset();
 	$(document).on('scroll',function(){
-		var	oDoc_SH = $(document).scrollTop();
-//        alert(c);
 		if(oDoc_SH>=80)
         {
            oNav.addClass('content'); oNav.css({'position':'fixed','top':'0px','display':'block'});
@@ -59,6 +64,8 @@ $(document).ready(function () {
             oNav.css({'display':'none'})
         }
 		});
+    
+    
     
     //更多资讯按钮
     $('.main-lastest-more-info').hover(function(){
@@ -76,9 +83,7 @@ $(document).ready(function () {
    
     //视频tab
     var aSpan=document.getElementsByClassName("nav-tab")[0].getElementsByTagName("span");
-        var aDiv=document.getElementById("tab-wrap").getElementsByClassName("video_img_tra");
-//        alert(aDiv.length);
-        
+        var aDiv=document.getElementById("tab-wrap").getElementsByClassName("video_img_tra");   
         for(var i=0;i<aSpan.length;i++){
             aSpan[i].index=i;
             aSpan[i].onclick=function(){
@@ -93,7 +98,9 @@ $(document).ready(function () {
             }
         };
    
-    // rank
+    
+    
+    // rank排名
     var aA = document.getElementById('rank-tab').getElementsByTagName('a');
     var aTable = document.getElementById('rank-content').getElementsByTagName("div");
     for (var i = 0; i < aA.length; i++) {

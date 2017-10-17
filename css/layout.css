@@ -281,11 +281,16 @@ header {
   background: url(images/icon_search_white.png) no-repeat center;
 }
 .header-bottom-rightbox .nav-user {
+  margin-top: 3px;
   width: 30px;
   height: 30px;
   cursor: pointer;
-  background: url(images/icon_user.png) no-repeat center;
 }
+.header-bottom-rightbox img:hover .user-log{
+  display: block;
+}
+
+
 .header-bottom-rightbox ul {
   display: none;
   position: absolute;
